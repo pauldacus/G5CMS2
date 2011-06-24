@@ -1,0 +1,106 @@
+#site_bar {
+  font-family:"Lucida Grande","Lucida Sans Unicode","helvetica neue", helvetica, arial, sans-serif;
+  padding:20px 0 0;
+  background:#073570;
+  background-image:-webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(0,45,88)),
+      color-stop(0.38, rgb(0,74,130)),
+      color-stop(0.93, rgb(0,45,88))
+  );
+  background-image:-moz-linear-gradient(
+      center bottom,
+      rgb(0,45,88) 0%,
+      rgb(0,74,130) 38%,
+      rgb(0,45,88) 93%
+  );
+  border-bottom:4px solid #535353;
+}
+
+/* SWITCH TO SITE BUTTON */
+/* slick black
+from Chad Mazzola https://github.com/ubuwaits/css3-buttons.git
+*/
+#editor_switch a {
+  float:right;
+  background:#111;
+  background:-moz-linear-gradient(0% 100% 90deg, #FFFFFF, #000000,
+              rgba(0, 0, 0, 0.9) 0%,
+              rgba(20, 20, 20, 0.9) 50%,
+              rgba(30, 30, 30, 0.9) 50%,
+              rgba(50, 50, 50, 0.9) 100%);
+  background:-webkit-gradient(linear, 0 0, 0 100%,
+              color-stop(0, rgba(50, 50, 50, 0.9)),
+              color-stop(0.5, rgba(30, 30, 30, 0.9)),
+              color-stop(0.5, rgba(20, 20, 20, 0.9)),
+              color-stop(1, rgba(0, 0, 0, 0.9)));
+  border:0;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  -moz-box-shadow:inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+  -webkit-box-shadow:inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+  box-shadow:inset 1px 1px 1px 0px rgba(135, 135, 135, 0.1), inset -1px -1px 1px 0px rgba(135, 135, 135, 0.1);
+  color:#fff;
+  font-size:16px;
+  font-weight:lighter;
+  text-align:center;
+  line-height:1;
+  padding:12px;
+  text-shadow:0px -1px 1px rgba(0, 0, 0, .8), 0 1px 1px rgba(255, 255, 255, 0.3);
+  width:240px;
+  text-decoration:none;
+}
+#editor_switch a:hover {
+  background:#222;
+  background:-moz-linear-gradient(0% 100% 90deg, #FFFFFF, #000000,
+              rgba(20, 20, 20, 0.9) 0%,
+              rgba(40, 40, 40, 0.9) 50%,
+              rgba(50, 50, 50, 0.9) 50%,
+              rgba(70, 70, 70, 0.9) 100%);
+  background:-webkit-gradient(linear, 0 0, 0 100%,
+              color-stop(0, rgba(70, 70, 70, 0.9)),
+              color-stop(0.5, rgba(50, 50, 50, 0.9)),
+              color-stop(0.5, rgba(40, 40, 40, 0.9)),
+              color-stop(1, rgba(20, 20, 20, 0.9)));
+  cursor:pointer;
+}
+
+#editor_switch a:active {
+  background:#000;
+  background:-moz-linear-gradient(0% 100% 90deg, #FFFFFF, #000000,
+              rgba(0, 0, 0, 0.9) 0%,
+              rgba(10, 10, 10, 0.9) 50%,
+              rgba(20, 20, 20, 0.9) 50%,
+              rgba(30, 30, 30, 0.9) 100%);
+  background:-webkit-gradient(linear, 0 0, 0 100%,
+              color-stop(0, rgba(30, 30, 30, 0.9)),
+              color-stop(0.5, rgba(20, 20, 20, 0.9)),
+              color-stop(0.5, rgba(10, 10, 10, 0.9)),
+              color-stop(1, rgba(0, 0, 0, 0.9)));
+}
+
+/* LOG OUT TEXT */
+#site_bar_branding {
+  float:right;clear:right;
+  position:relative;top:-10px;
+  color:#fff;
+  font-size:16px;
+}
+#site_bar_company_name::after {content:' |';}
+
+#site_bar_branding a {color:#e55318;text-decoration:none;outline:none;border:none;}
+#site_bar_branding a:hover,
+#site_bar_branding a:focus {color:#e77a33;text-decoration:underline;}
+#site_bar_branding a:active {color:#b73e0d;}
+
+/* LOGO */
+#site_bar_refinery_cms_logo {
+  display:block;
+  width:78px;height:72px;
+  background:url(http://g5mobile.g5stg.com/images/logo.gif);
+}
+#site_bar_content #site_bar_refinery_cms_logo:hover {text-decoration:none;}
+#site_bar_refinery_cms_logo img {display:none;}
